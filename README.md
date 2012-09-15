@@ -68,3 +68,8 @@ You can even run queries in parallel with `FiberIterator`:
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Authors
+
+* Bo Chen (bochen.chen@gmail.com)
+* Ilya Maykov (ivmaykov@gmail.com)
