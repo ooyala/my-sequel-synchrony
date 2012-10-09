@@ -6,6 +6,7 @@
 
 require "sequel"
 require "sequel/adapters/mysql2"
+require "em-synchrony"
 require "em-synchrony/mysql2"
 require "my-sequel-synchrony/connection_pool"
 
