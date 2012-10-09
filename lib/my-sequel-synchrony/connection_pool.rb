@@ -52,7 +52,7 @@ module Sequel::Mysql2::Synchrony
       @pending_disconnects += @in_use_connections.values.to_set
       block ||= @disconnection_proc
       connections_to_disconnect.each do |conn|
-        disconnect_conn(conn, opts, block)
+        disconnect_conn(conn, opts, &block)
       end
     end
 
