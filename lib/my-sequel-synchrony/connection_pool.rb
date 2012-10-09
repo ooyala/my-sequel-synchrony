@@ -3,9 +3,8 @@ require "set"
 require "sequel"
 require "sequel/adapters/mysql2"
 
-# A Fiber-aware Sequel::ConnectionPool that works with EM::Synchrony! This version is not shard-aware,
-# that may be a TODO in the future.
 module Sequel::Mysql2::Synchrony
+  # A Fiber-aware Sequel::ConnectionPool that works with EM::Synchrony! This version is not shard-aware.
   class ConnectionPool < ::Sequel::ConnectionPool
     # The maximum number of connections this pool will create (per shard/server
     # if sharding).
